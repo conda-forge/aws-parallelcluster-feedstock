@@ -12,7 +12,7 @@ source:
     - 0001-removed-tests.patch
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pcluster = pcluster.cli:main
     - awsbqueues = awsbatch.awsbqueues:main
@@ -60,3 +60,5 @@ about:
 extra:
   recipe-maintainers:
     - notestaff
+    - sean-smith
+    - lukeseawalker
