@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
-cat << EOF
-  ------------------------------------------------------------------------------
 
-  Please note:  AWS ParallelCluster 2.3.2a1 is an alpha version.  For production
-  use consider switching to 2.3.1 or wait for the new stable release coming soon.
+set -e -o pipefail -u
 
-  ------------------------------------------------------------------------------ 
+if [[ ${PKG_VERSION} == *"a"* ]]; then
+    cat > "${PREFIX}"/.messages.txt <<- EOF
+
+##############################################################################
+#                                                                            
+# Warning: version ${PKG_NAME}-${PKG_VERSION} is an alpha version.          
+# Consider using stable version for production use.                          
+#                                                                            
+##############################################################################
+
 EOF
+
+fi
