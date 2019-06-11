@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "2.3.2a1" %}
+{% set version = "2.4.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -12,7 +12,7 @@ source:
     - 0001-removed-tests.patch
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - pcluster = pcluster.cli:main
     - awsbqueues = awsbatch.awsbqueues:main
