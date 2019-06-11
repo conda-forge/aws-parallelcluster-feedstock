@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "2.3.2a1" %}
+{% set version = "2.4.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,12 +7,12 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "ada27e9d4c116a39abceb02775fccc660aef56dc3139e100a569faa37324052c"
+  sha256: "e167717ea814171cd434612149a05497b7adc857ca76ef2ad091d58c66009af7"
   patches:
     - 0001-removed-tests.patch
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - pcluster = pcluster.cli:main
     - awsbqueues = awsbatch.awsbqueues:main
