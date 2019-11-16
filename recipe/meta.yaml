@@ -28,10 +28,13 @@ requirements:
   run:
     - python
     - setuptools
-    - boto3 >=1.9.54
-    - future >=0.16.0,<=0.17.1
+    - boto3 >=1.10.15
+    - future >=0.16.0,<=0.18.2
     - tabulate >=0.8.2,<=0.8.3
     - configparser >=3.5.0,<=3.5.3  # [py2k]
+    - ipaddress >= 1.0.22
+    - enum34 >= 1.1.6
+    - PyYAML >= 5.1.2
 
 test:
   imports:
