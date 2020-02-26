@@ -1,13 +1,13 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "2.5.1" %}
+{% set version = "2.6.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 4fd6e14583f8cf81f9e4aa1d6188e3708d3d14e6ae252de0a94caaf58be76303
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: aaed6962cf5027206834ac24b3d312da91e0f96ae8607f555e12cb124b869f0c
 
 build:
   number: 0
@@ -19,7 +19,7 @@ build:
     - awsbkill = awsbatch.awsbkill:main
     - awsbsub = awsbatch.awsbsub:main
     - awsbout = awsbatch.awsbout:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -48,13 +48,13 @@ test:
     - awsbout --help
 
 about:
-  home: "https://github.com/aws/aws-parallelcluster"
-  license: "Apache-2.0"
-  license_family: "APACHE"
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
-  summary: "AWS ParallelCluster is an AWS supported Open Source cluster management tool to deploy and manage HPC clusters in the AWS cloud."
-  doc_url: "https://aws-parallelcluster.readthedocs.io/en/v{{ version }}/"
-  dev_url: "https://github.com/aws/aws-parallelcluster"
+  home: https://github.com/aws/aws-parallelcluster
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  summary: AWS ParallelCluster is an AWS supported Open Source cluster management tool to deploy and manage HPC clusters in the AWS cloud.
+  doc_url: https://aws-parallelcluster.readthedocs.io/en/v{{ version }}/
+  dev_url: https://github.com/aws/aws-parallelcluster
 
 extra:
   recipe-maintainers:
