@@ -33,6 +33,7 @@ requirements:
     - future >=0.18.2
     - pyyaml >=5.2
     - configparser >=4.0.2  # [py2k]
+    - jinja2 >=2.11.0
 
 test:
   imports:
