@@ -10,7 +10,7 @@ source:
   sha256: a7a27871b4f54cb913b0c1233e675131e9b2099549af0840d32c36b7e91b104b
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pcluster = pcluster.cli:main
     - awsbqueues = awsbatch.awsbqueues:main
@@ -28,12 +28,13 @@ requirements:
   run:
     - python
     - setuptools
-    - boto3 >=1.10.15
-    - tabulate >=0.8.6
+    - boto3 >=1.16.14
+    - tabulate >=0.8.6,<=0.8.7
     - future >=0.18.2
-    - pyyaml >=5.2
+    - pyyaml >=5.3.1
     - configparser >=4.0.2  # [py2k]
     - jinja2 >=2.11.0
+    - ipaddress >=1.0.22
 
 test:
   imports:
