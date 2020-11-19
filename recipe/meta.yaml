@@ -34,7 +34,6 @@ requirements:
     - pyyaml >=5.3.1
     - configparser >=4.0.2  # [py2k]
     - jinja2 >=2.11.0
-    - ipaddress >=1.0.22
 
 test:
   imports:
