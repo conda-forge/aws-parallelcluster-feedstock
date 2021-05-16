@@ -11,7 +11,7 @@ Summary: AWS ParallelCluster is an AWS supported Open Source cluster management 
 
 Development: https://github.com/aws/aws-parallelcluster
 
-Documentation: https://aws-parallelcluster.readthedocs.io/en/v2.10.3/
+Documentation: https://aws-parallelcluster.readthedocs.io/en/v2.10.4/
 
 Current build status
 ====================
@@ -164,6 +164,7 @@ Installing `aws-parallelcluster` from the `conda-forge` channel can be achieved 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `aws-parallelcluster` can be installed with:
