@@ -11,7 +11,7 @@ Summary: AWS ParallelCluster is an AWS supported Open Source cluster management 
 
 Development: https://github.com/aws/aws-parallelcluster
 
-Documentation: https://aws-parallelcluster.readthedocs.io/en/v2.11.2/
+Documentation: https://aws-parallelcluster.readthedocs.io/en/v3.0.0/
 
 Current build status
 ====================
