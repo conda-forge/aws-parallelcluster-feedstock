@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   entry_points:
-    - pcluster = pcluster.cli:main
+    - pcluster = pcluster.cli.entrypoint:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
