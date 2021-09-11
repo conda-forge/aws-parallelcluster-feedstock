@@ -13,12 +13,6 @@ build:
   number: 0
   entry_points:
     - pcluster = pcluster.cli:main
-    - awsbqueues = awsbatch.awsbqueues:main
-    - awsbhosts = awsbatch.awsbhosts:main
-    - awsbstat = awsbatch.awsbstat:main
-    - awsbkill = awsbatch.awsbkill:main
-    - awsbsub = awsbatch.awsbsub:main
-    - awsbout = awsbatch.awsbout:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -37,16 +31,9 @@ requirements:
 
 test:
   imports:
-    - awsbatch
     - pcluster
   commands:
     - pcluster --help
-    - awsbqueues --help
-    - awsbhosts --help
-    - awsbstat --help
-    - awsbkill --help
-    - awsbsub --help
-    - awsbout --help
 
 about:
   home: https://github.com/aws/aws-parallelcluster
