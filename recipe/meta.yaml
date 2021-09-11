@@ -1,6 +1,5 @@
 {% set name = "aws-parallelcluster" %}
 {% set version = "3.0.0" %}
-{% set cdk_version = "1.116" %}
 
 package:
   name: {{ name|lower }}
@@ -32,23 +31,6 @@ requirements:
     - jmespath~=0.10
     - werkzeug~=2.0
     - marshmallow~=3.10
-    - aws-cdk.core~={{ cdk_version }}
-    - aws-cdk.aws-batch~={{ cdk_version }}
-    - aws_cdk.aws-cloudwatch~={{ cdk_version }}
-    - aws-cdk.aws-codebuild~={{ cdk_version }}
-    - aws-cdk.aws-dynamodb~={{ cdk_version }}
-    - aws-cdk.aws-ec2~={{ cdk_version }}
-    - aws-cdk.aws-efs~={{ cdk_version }}
-    - aws-cdk.aws-events~={{ cdk_version }}
-    - aws-cdk.aws-fsx~={{ cdk_version }}
-    - aws-cdk.aws-imagebuilder~={{ cdk_version }}
-    - aws-cdk.aws-iam~={{ cdk_version }}
-    - aws_cdk.aws-lambda~={{ cdk_version }}
-    - aws-cdk.aws-logs~={{ cdk_version }}
-    - aws-cdk.aws-route53~={{ cdk_version }}
-    - aws-cdk.aws-ssm~={{ cdk_version }}
-    - aws-cdk.aws-sqs~={{ cdk_version }}
-    - aws-cdk.aws-cloudformation~={{ cdk_version }}
 
 test:
   imports:
