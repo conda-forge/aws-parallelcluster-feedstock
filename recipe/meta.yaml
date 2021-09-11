@@ -32,7 +32,7 @@ requirements:
     - jmespath~=0.10
     - werkzeug~=2.0
     - marshmallow~=3.10
-    - urllib3 >= 1.26.6
+    - urllib3 >=1.26.6
     - python-dateutil    
 
 test:
