@@ -31,6 +31,7 @@ requirements:
     - jmespath ~=0.10
     - werkzeug ~=2.0
     - marshmallow ~=3.10
+    - importlib_resources #py3.6
 
 
 
