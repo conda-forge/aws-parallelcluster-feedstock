@@ -22,6 +22,7 @@ requirements:
   run:
     - python
     - setuptools
+    - importlib
     - boto3 >=1.16.14
     - tabulate~=0.8
     - pyyaml >=5.3.1
