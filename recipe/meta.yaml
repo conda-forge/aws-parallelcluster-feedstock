@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "2.11.2" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,18 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 60d96a5ea4dca4816ceffc4546549743abd1f6207c62f016c9c348adc64b2ec0
+  sha256: 4eaa6b075c7e03bef53a943e8c7ca72c79ae6a8e5d163d0892f66dc50d21d417
 
 build:
   number: 0
   entry_points:
     - pcluster = pcluster.cli:main
-    - awsbqueues = awsbatch.awsbqueues:main
-    - awsbhosts = awsbatch.awsbhosts:main
-    - awsbstat = awsbatch.awsbstat:main
-    - awsbkill = awsbatch.awsbkill:main
-    - awsbsub = awsbatch.awsbsub:main
-    - awsbout = awsbatch.awsbout:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -37,16 +31,9 @@ requirements:
 
 test:
   imports:
-    - awsbatch
     - pcluster
   commands:
     - pcluster --help
-    - awsbqueues --help
-    - awsbhosts --help
-    - awsbstat --help
-    - awsbkill --help
-    - awsbsub --help
-    - awsbout --help
 
 about:
   home: https://github.com/aws/aws-parallelcluster
@@ -64,9 +51,7 @@ extra:
     - lukeseawalker
     - demartinofra
     - tilne
-    - rexcsn
     - enrico-usai
-    - ddeidda
     - chenwany
     - charlesg3
     - yuleiwan
