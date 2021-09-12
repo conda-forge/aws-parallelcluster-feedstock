@@ -47,7 +47,7 @@ about:
   license_family: APACHE
   license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
   summary: AWS ParallelCluster is an AWS supported Open Source cluster management tool to deploy and manage HPC clusters in the AWS cloud.
-  doc_url: https://aws-parallelcluster.readthedocs.io/en/v{{ version }}/
+  doc_url: https://docs.aws.amazon.com/parallelcluster
   dev_url: https://github.com/aws/aws-parallelcluster
 
 extra:
