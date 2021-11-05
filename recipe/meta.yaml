@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "3.0.0" %}
+{% set version = "2.11.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,18 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4eaa6b075c7e03bef53a943e8c7ca72c79ae6a8e5d163d0892f66dc50d21d417
+  sha256: 7c1d74123f2f670846aed8fe1fcca5908bb46ec014e2dfc7d3ec8994447a37a0
 
 build:
   number: 0
   entry_points:
-    - pcluster = pcluster.cli.entrypoint:main
+    - pcluster = pcluster.cli:main
+    - awsbqueues = awsbatch.awsbqueues:main
+    - awsbhosts = awsbatch.awsbhosts:main
+    - awsbstat = awsbatch.awsbstat:main
+    - awsbkill = awsbatch.awsbkill:main
+    - awsbsub = awsbatch.awsbsub:main
+    - awsbout = awsbatch.awsbout:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -23,23 +29,24 @@ requirements:
     - python
     - setuptools
     - boto3 >=1.16.14
-    - tabulate ~=0.8
+    - tabulate >=0.8.6,<=0.8.7
+    - future >=0.18.2
     - pyyaml >=5.3.1
+    - configparser >=4.0.2  # [py2k]
     - jinja2 >=2.11.0
-    - connexion ==2.7.0
-    - flask ~=2.0
-    - jmespath ~=0.10
-    - werkzeug ~=2.0
-    - marshmallow ~=3.10
-    - importlib_resources #py3.6
-
-
 
 test:
   imports:
+    - awsbatch
     - pcluster
   commands:
     - pcluster --help
+    - awsbqueues --help
+    - awsbhosts --help
+    - awsbstat --help
+    - awsbkill --help
+    - awsbsub --help
+    - awsbout --help
 
 about:
   home: https://github.com/aws/aws-parallelcluster
