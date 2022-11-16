@@ -10,7 +10,7 @@ source:
   sha256: acf33f48f8e48b0bc7be20f539d61baa1e27248765ba355df753bdfca4abd3cb
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pcluster = pcluster.cli:main
     - awsbqueues = awsbatch.awsbqueues:main
