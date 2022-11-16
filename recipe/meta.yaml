@@ -29,7 +29,7 @@ requirements:
     - python
     - setuptools
     - boto3 >=1.16.14
-    - tabulate >=0.8.6,<=0.8.7
+    - tabulate >=0.8.8,<=0.8.10
     - future >=0.18.2
     - pyyaml >=5.3.1
     - configparser >=4.0.2  # [py2k]
