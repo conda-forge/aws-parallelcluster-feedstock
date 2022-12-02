@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "2.11.8" %}
+{% set version = "2.11.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: acf33f48f8e48b0bc7be20f539d61baa1e27248765ba355df753bdfca4abd3cb
+  sha256: 615de4d59d9fd56a31d4feb3aeefe685346538a8dd0c1c35b660029f891d4dfd
 
 build:
   number: 2
