@@ -1,11 +1,11 @@
-About aws-parallelcluster
-=========================
+About aws-parallelcluster-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-parallelcluster-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aws/aws-parallelcluster
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-parallelcluster-feedstock/blob/main/LICENSE.txt)
 
 Summary: AWS ParallelCluster is an AWS supported Open Source cluster management tool to deploy and manage HPC clusters in the AWS cloud.
 
