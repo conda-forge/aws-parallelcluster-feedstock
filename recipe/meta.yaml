@@ -48,7 +48,7 @@ requirements:
     - aws-cdk.aws-cloudformation >=1.164,<2.dev0
     - werkzeug >=2.0,<3.dev0
     - connexion >=2.13.0,<2.14.dev0
-    - flask >=2.2.5,==2.2.*
+    - flask >=2.2.5,<2.3
     - jmespath >=0.10,<1.dev0
 
 test:
