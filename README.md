@@ -156,6 +156,5 @@ Feedstock Maintainers
 * [@hanwen-pcluste](https://github.com/hanwen-pcluste/)
 * [@lukeseawalker](https://github.com/lukeseawalker/)
 * [@notestaff](https://github.com/notestaff/)
-* [@ocefpaf](https://github.com/ocefpaf/)
 * [@sean-smith](https://github.com/sean-smith/)
 
