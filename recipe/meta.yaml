@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
     - pip
   run:
-    - jsii ==1.85.0
+    - python-jsii ==1.85.0
     - python >=3.7
     - setuptools
     - boto3 >=1.16.14
