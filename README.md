@@ -157,4 +157,5 @@ Feedstock Maintainers
 * [@lukeseawalker](https://github.com/lukeseawalker/)
 * [@notestaff](https://github.com/notestaff/)
 * [@sean-smith](https://github.com/sean-smith/)
+* [@dreambeyondorange](https://github.com/dreambeyondorange/)
 
