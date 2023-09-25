@@ -150,6 +150,7 @@ Feedstock Maintainers
 * [@charlesg3](https://github.com/charlesg3/)
 * [@chenwany](https://github.com/chenwany/)
 * [@demartinofra](https://github.com/demartinofra/)
+* [@dreambeyondorange](https://github.com/dreambeyondorange/)
 * [@enrico-usai](https://github.com/enrico-usai/)
 * [@francesco-giordano](https://github.com/francesco-giordano/)
 * [@gmarciani](https://github.com/gmarciani/)
@@ -157,5 +158,4 @@ Feedstock Maintainers
 * [@lukeseawalker](https://github.com/lukeseawalker/)
 * [@notestaff](https://github.com/notestaff/)
 * [@sean-smith](https://github.com/sean-smith/)
-* [@dreambeyondorange](https://github.com/dreambeyondorange/)
 
