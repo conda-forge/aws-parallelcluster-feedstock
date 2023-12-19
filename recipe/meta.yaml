@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "3.7.2" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-parallelcluster-{{ version }}.tar.gz
-  sha256: 85fffea75f3c2fb872c489544a606194dde9867a6b3a0cf90185ceaed3f8b7cb
+  sha256: d480611017ed2ede4cf37cea2af1b883e4f23f300a56b82112d04e40689d974e
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - setuptools
     - boto3 >=1.16.14
     - tabulate >=0.8.8,<=0.8.10
-    - pyyaml ==6.0.1
+    - pyyaml >=5.3.1,!=5.4
     - jinja2 >=3.0,<4.dev0
     - marshmallow >=3.10,<4.dev0
     - aws-cdk.core >=1.164,<2.dev0
