@@ -157,4 +157,6 @@ Feedstock Maintainers
 * [@jdeamicis](https://github.com/jdeamicis/)
 * [@lukeseawalker](https://github.com/lukeseawalker/)
 * [@notestaff](https://github.com/notestaff/)
-
+* [@himani2411](https://github.com/himani2411/)
+* [@hgreebe](https://github.com/hgreebe/)
+* [@judysng](https://github.com/judysng/)
