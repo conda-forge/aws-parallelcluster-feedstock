@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "3.9.2" %}
+{% set version = "3.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-parallelcluster-{{ version }}.tar.gz
-  sha256: 84994b780eb19fa2046d0d834623d5b870d6d9721b6bd278093bdcbacf499099
+  sha256: 6387b62832b0f9e1855a5e10f762c5c31368098797251ea38f7248baf3c0c961
 
 build:
   entry_points:
