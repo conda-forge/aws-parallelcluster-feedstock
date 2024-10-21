@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
   run:
     - python-jsii ==1.85.0
     - python >=3.7
