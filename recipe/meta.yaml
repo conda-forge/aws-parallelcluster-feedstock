@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-parallelcluster-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aws-parallelcluster-{{ version }}.tar.gz
   sha256: cabb2ae83a4d127f9507344458f3028bad30e682b54bb94ac3f5c7174ca43eed
 
 build:
@@ -15,16 +15,16 @@ build:
     - pcluster3-config-converter = pcluster3_config_converter.pcluster3_config_converter:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - python-jsii ==1.85.0
-    - python >=3.7
+    - python >={{ python_min }}
     - setuptools
     - boto3 >=1.16.14
     - tabulate >=0.8.8,<=0.8.10
@@ -63,6 +63,7 @@ test:
     - pcluster3-config-converter --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/aws/aws-parallelcluster
