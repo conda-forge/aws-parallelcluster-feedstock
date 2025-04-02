@@ -149,13 +149,12 @@ Feedstock Maintainers
 
 * [@charlesg3](https://github.com/charlesg3/)
 * [@demartinofra](https://github.com/demartinofra/)
-* [@dreambeyondorange](https://github.com/dreambeyondorange/)
 * [@enrico-usai](https://github.com/enrico-usai/)
 * [@gmarciani](https://github.com/gmarciani/)
 * [@hanwen-pcluste](https://github.com/hanwen-pcluste/)
+* [@hehe7318](https://github.com/hehe7318/)
 * [@hgreebe](https://github.com/hgreebe/)
 * [@himani2411](https://github.com/himani2411/)
-* [@jdeamicis](https://github.com/jdeamicis/)
 * [@lukeseawalker](https://github.com/lukeseawalker/)
 * [@notestaff](https://github.com/notestaff/)
 
