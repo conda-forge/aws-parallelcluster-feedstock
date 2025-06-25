@@ -151,7 +151,7 @@ Feedstock Maintainers
 * [@demartinofra](https://github.com/demartinofra/)
 * [@enrico-usai](https://github.com/enrico-usai/)
 * [@gmarciani](https://github.com/gmarciani/)
-* [@hanwen-pcluste](https://github.com/hanwen-pcluste/)
+* [@hanwen-cluster](https://github.com/hanwen-cluster/)
 * [@hehe7318](https://github.com/hehe7318/)
 * [@hgreebe](https://github.com/hgreebe/)
 * [@himani2411](https://github.com/himani2411/)
