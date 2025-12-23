@@ -1,5 +1,5 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "3.14.0" %}
+{% set version = "3.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aws_parallelcluster-{{ version }}.tar.gz
-  sha256: fae0cf3f7ce32062aa6212d9eceeb44d14d2d6f0a0b8ecee344bb171380e6a63
+  sha256: eebb04dcd09e53d98281f09b9ba2ebc1140b00cf34a16318be796fb713ddfde1
 
 build:
   entry_points:
@@ -23,6 +23,8 @@ requirements:
     - pip
     - setuptools
   run:
+    - aws_cdk.aws-cloudwatch >=1.164,<2.dev0
+    - aws_cdk.aws-lambda >=1.164,<2.dev0
     - packaging >=25.0,<26.dev0
     - python-jsii ==1.85.0
     - python >=3.7
@@ -49,9 +51,9 @@ requirements:
     - aws-cdk.aws-ssm >=1.164,<2.dev0
     - aws-cdk.aws-sqs >=1.164,<2.dev0
     - aws-cdk.aws-cloudformation >=1.164,<2.dev0
-    - werkzeug >=2.0,<3.dev0
-    - connexion >=2.13.0,<2.14.dev0
-    - flask >=2.2.5,<2.3
+    - werkzeug >=3.1,<4.dev0
+    - connexion >=2.15.1,<2.16.dev0
+    - flask >=3.1.0,<3.2.dev0
     - jmespath >=0.10,<1.dev0
 
 test:
