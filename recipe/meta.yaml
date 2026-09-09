@@ -1,13 +1,13 @@
 {% set name = "aws-parallelcluster" %}
-{% set version = "3.16.0" %}
+{% set version = "3.16.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aws_parallelcluster-{{ version }}.tar.gz
-  sha256: a5aab40c6435b71ff156c4e4243cf0fa99ed86f8a4b1fc4c73b5401d906bcb71
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/aws_parallelcluster-{{ version }}.tar.gz
+  sha256: 31b1d1bd3a01a75c683521b37c17d1f96786106962a9169a2561b345aac822a9
 
 build:
   entry_points:
